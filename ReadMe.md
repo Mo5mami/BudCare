@@ -21,7 +21,7 @@ we have used LSTM  and embedded words to create a model with an accuracy of 97% 
 creating a demo site presenting a single use case where the user can track tweets of his children and seeing the predictions of the model which is integrated in the web applicaton .
 
 ### Technologies 
-* [Flask] - web framework written in python to develop web apps
+* [Flask] - web framework written in python to develop web apps (chIldcAre repository)
 * [tensorflow] an open source library for numerical computation and large-scale machine learning
 * [tweepy] - Twitter API to get data from twitter 
 
