@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
+{% endblock %}
+{% block content %}
+
+
+
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    {% block sidebar %}
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h2 class=""><b>ch<mark>I</mark>ldc<mark>A</mark>re</b></h2>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="{{url_for('main.parent')}}">Home</a>
+            </li>
+
+            <li>
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Child/children</a>
+                
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    {% for ind,child in enumerate(children) %}
+                    <li>
+                        <a href="{{url_for('main.child',n=ind,name='Table')}}">{{child["name"] }}</a>
+                    </li>
+                    {% endfor %}
+                    
+                </ul>
+                
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    {%endblock%}
+
+    <!-- Page Content  -->
+    {% block contenu %}
+    <div id="content" class="home-bg">
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>Hide</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">{{ parent["name"] }} </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-1">
+                <h1 class="text-white">
+                We Build A Better <mask>FUTURE</mask> 
+            </h1>
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+    {%endblock%}
+</div>
+
+
+{% endblock %}
+
+
+
+{% block footer %}
+
+{% endblock %}
+
+
+{% block js%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+{% endblock %}

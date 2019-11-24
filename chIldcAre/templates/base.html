@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome!!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/fontawesome/css/all.min.css')}}">
+   <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/mdb/css/bootstrap.min.css')}}"  >
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/mdb/css/mdb.min.css')}}" >
+
+ 
+ 
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}">
+
+	{% block css %}
+  {% endblock %}
+	
+	
+    
+    
+ 
+  
+
+
+
+</head>
+
+<body>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+{%block footer%}
+
+<footer class="footer bg-dark text-light ">
+    <div class="container bg-dark">
+      
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <ul class="list-unstyled list-inline social text-center">
+
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook"></i></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          
+          <p class="h6">&copy All right Reserved.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Genispai</a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </footer>	
+  {% endblock %}
+
+	 <script type="text/javascript" src="{{url_for('static',filename='vendor/mdb/js/jquery-3.4.1.min.js')}}"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="{{url_for('static',filename='vendor/mdb/js/popper.min.js')}}"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static',filename='vendor/mdb/js/bootstrap.min.js')}}"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="{{url_for('static',filename='vendor/mdb/js/mdb.min.js')}}"></script>
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+{% block js %}
+  {% endblock %}
+</body>
+</html>
