@@ -25,6 +25,14 @@ creating a demo site presenting a single use case where the user can track tweet
 * [tensorflow] an open source library for numerical computation and large-scale machine learning
 * [tweepy] - Twitter API to get data from twitter 
 
+# Team members
+* **Mokhtar Mami** - *github* - [Mokhtar Mami](https://github.com/Mo5mami)
+
+  **Ahmed Attia** - *github* - [Ahmed Attia](https://github.com/ahmedattia143)
+  
+  **Bochra Saffar** - *github* - [Bochra Saffar](https://github.com/bochrasaffar)
+
+
 
 
 
